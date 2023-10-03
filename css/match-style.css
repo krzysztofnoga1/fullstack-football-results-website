@@ -1,0 +1,290 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.background{
+    width: 100%;
+    height: 200vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("../banners/banner-long.jpg");
+    background-size: cover;
+    margin: 0;
+    overflow-y: auto;
+}
+
+.navbar{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 7px;
+}
+
+.navbar img{
+    height: 63px;
+    margin: 0;
+}
+
+.navbar ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+}
+
+.navbar ul li a{
+    font-family: sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    color: #f7f7f7;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #44ae5c;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 7px;
+    opacity: 0;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: darkgray;
+    border-radius: 5px;
+}
+
+.matchbox{
+    width: 60%;
+    height: 160vh;
+    background-color: rgba(247,247, 247, 0.8);
+    margin: auto;
+    position: relative;
+    top: 7%;
+    border-radius: 10px;
+}
+
+.result{
+    width: 90%;
+    height: 15%;
+    border-bottom: solid black 2px;
+    display: flex;
+    margin: auto;
+}
+
+.teaminfo{
+    height: 100%;
+    width: 30%;
+    text-align: center;
+}
+
+.teaminfo img{
+    position: relative;
+    top: 7%;
+    height: 60%;
+    width: 42%;
+}
+
+.teaminfo p{
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.result-view{
+    width: 40%;
+    text-align: center;
+}
+
+.result-view p{
+    font-family: sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    position: relative;
+    bottom: 15%;
+}
+
+.details{
+    width: 100%;
+    height: 50%;
+    overflow-y: scroll;
+    margin: auto;
+}
+
+.details p{
+    font-family: sans-serif;
+    font-size: 16px;
+    border-bottom: solid black 2px;
+    width: 91%;
+    position: relative;
+    left:5%;
+}
+
+.details table{
+    margin: auto;
+    width: 90%;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.details table td:nth-child(5){
+    width: 20%;
+}
+
+.details table td:nth-child(4){
+    width: 20%;
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.details table td:nth-child(6){
+    width: 20%;
+    text-align: right;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.details table td:nth-child(1){
+    width: 5%;
+    text-align: center;
+}
+
+.details table td:nth-child(9){
+    width: 5%;
+    text-align: center;
+}
+
+
+.details table td:nth-child(3){
+    width:5%;
+    text-align: center;
+}
+
+.details table td:nth-child(7){
+    width:5%;
+    text-align: center;
+}
+
+
+.details table td:nth-child(2){
+    width: 10%;
+    text-align: left;
+}
+
+.details table td:nth-child(8){
+    width: 10%;
+    text-align: right;
+}
+
+.details table td img{
+    width: 30px;
+    height: 30px;
+}
+
+.detailsbox p{
+    font-family: sans-serif;
+    border: none;
+}
+
+.commentbox{
+    width: 90%;
+    position: relative;
+    height: 30%;
+    margin: auto;
+}
+
+.add-comment{
+    position: relative;
+    top: 10%;
+    height: 30%;
+    width: 90%;
+    margin: auto;
+    display: block;
+    justify-content: space-between;
+}
+
+.add-comment textarea{
+    position: relative;
+    width: 100%;
+    height: 55px;
+    margin-bottom: 10px;
+
+}
+
+.add-comment button{
+    background-color: #2f9e41;
+    border-radius: 5px;
+    border: none;
+    font-family: sans-serif;
+    font-size: 16px;
+    height: 25px;
+    color: #f7f7f7;
+}
+
+.add-comment button:hover{
+    cursor: pointer;
+}
+
+.add-comment button:active{
+    background-color: #44ae5c;
+}
+
+.comments{
+    height: 60%;
+    position: relative;
+    top: 5%;
+    border: solid darkgray;
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+
+.iframe{
+    width: 0;
+    height: 0;
+    border: none;
+    display: none;
+}
+
+
+.comment{
+    width: 90%;
+    background-color: #2f9e41;
+    border-radius: 7px;
+    margin-top: 5px;
+    margin-left: 20px;
+    padding: 20px;
+}
+
+.comment p{
+    font-family: sans-serif;
+    color: #f7f7f7;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.warning{
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}

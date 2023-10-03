@@ -1,0 +1,245 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.background{
+    width: 100%;
+    height: 200vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("../banners/banner-long.jpg");
+    background-size: cover;
+    margin: 0;
+    overflow-y: auto;
+}
+
+.navbar{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 7px;
+}
+
+.navbar img{
+    height: 63px;
+    margin: 0;
+}
+
+.navbar ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+}
+
+.navbar ul li a{
+    font-family: sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    color: #f7f7f7;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #44ae5c;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.teambox{
+    position: relative;
+    height: 170vh;
+    width: 60vw;
+    background-color: rgba(247,247, 247, 0.8);
+    border-radius: 10px;
+    margin: auto;
+    top: 8%;
+}
+
+.top-div{
+    border-bottom: solid black;
+    position:relative;
+    height: 12%;
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.top-div img{
+    position: relative;
+    height: 70%;
+    width: 13%;
+    top: 15%;
+}
+
+.info-div{
+    position: relative;
+    height: 80%;
+    top: 10%;
+    left: 2%;
+}
+
+.team-name{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.table-position{
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.buttonbox{
+    position: relative;
+    width: 90%;
+    height: 2.5%;
+    margin: auto;
+    text-align: center;
+    top: 1%;
+}
+
+.buttonbox button{
+    width: 15%;
+    height: 100%;
+    background-color: darkgray;
+    border: none;
+    border-radius: 3px;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #f7f7f7;
+}
+
+.buttonbox button.selected{
+    background-color: #2f9e41;
+}
+
+.buttonbox button:hover{
+    cursor: pointer;
+}
+
+.squad-tablebox{
+    position: relative;
+    top: 3%;
+    height: 80%;
+    overflow-y: scroll;
+}
+
+.squad-tablebox p{
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    width: 50%;
+    left: 10%;
+    display: block;
+}
+
+.table-style{
+    width: 80%;
+    left: 10%;
+    position: relative;
+    font-family: sans-serif;
+    font-size: 14px;
+    border-spacing: 0;
+    margin-bottom: 4%;
+}
+
+.table-style td{
+    border-bottom: 2px solid;
+    border-color: gray;
+}
+
+.table-style td:nth-child(1){
+    width: 90%;
+}
+
+.table-style img{
+    height: 20px;
+    width: 30px;
+}
+
+.played-tablebox{
+    position: relative;
+    top: 3%;
+    height: 80%;
+    overflow-y: scroll;
+    display: none;
+}
+
+.matches-table{
+    left: 20%;
+    width: 60%;
+    top: 1%;
+    position: relative;
+    font-family: sans-serif;
+    font-size: 14px;
+    border-spacing: 0;
+    margin-bottom: 7%;
+}
+
+.matches-table img{
+    height: 26px;
+    width: 26px;
+}
+
+.matches-table td{
+    border-bottom: 2px solid;
+    border-color: gray;
+}
+
+.matches-table td:nth-child(1){
+    width: 30%;
+    text-align: right;
+    font-size: 14px;
+}
+
+.matches-table td:nth-child(2), td:nth-child(4){
+    width: 15%;
+    text-align: center;
+}
+
+.matches-table td:nth-child(3){
+    width: 10%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.matches-table td:nth-child(5){
+    width: 30%;
+    text-align: left;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 7px;
+    opacity: 0;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: darkgray;
+    border-radius: 5px;
+}
+
+.clickable-row:hover{
+    cursor: pointer;
+}

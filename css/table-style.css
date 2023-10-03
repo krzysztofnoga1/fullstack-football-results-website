@@ -1,0 +1,367 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.background{
+    width: 100%;
+    height: 200vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("../banners/banner-long.jpg");
+    background-size: cover;
+    margin: 0;
+    overflow-y: scroll;
+}
+
+.navbar{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 7px;
+}
+
+.navbar img{
+    height: 63px;
+    margin: 0;
+}
+
+.navbar ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+}
+
+.navbar ul li a{
+    font-family: sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    color: #f7f7f7;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #44ae5c;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.tablebox{
+    width: 60%;
+    height: 80%;
+    background-color: rgba(247,247, 247, 0.8);
+    border-radius: 15px;
+    position: relative;
+    left: 20%;
+    top: 7%;
+}
+
+.table-div table{
+    width: 70%;
+    height: 90%;
+    top: 1%;
+    left: 15%;
+    position: relative;
+    font-family: sans-serif;
+    font-size: 14px;
+    border-spacing: 0;
+}
+
+.table-div table th{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.table-div table th:nth-child(3){
+    text-align: left;
+    padding-left: 10px;
+}
+
+.table-div table td{
+    text-align: center;
+    border-bottom: 2px solid;
+    border-color: gray;
+}
+
+.table-div table td:nth-child(3){
+    text-align: left;
+    padding-left: 4px;
+}
+
+.table-div table td img{
+    position: relative;
+    padding: 0;
+    height: 26px;
+    width: 26px;
+}
+
+.table-div table tr:nth-child(2) td:nth-child(1) div{
+    height: 75%;
+    width: 42%;
+    left: 28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 5px;
+    background-color: darkblue;
+    font-weight: bold;
+    color: #f7f7f7;
+}
+
+.table-div table tr:nth-child(3) td:nth-child(1) div{
+    height: 75%;
+    width: 42%;
+    left: 28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 5px;
+    background-color: darkgreen;
+    font-weight: bold;
+    color: #f7f7f7;
+}
+
+.table-div table tr:nth-child(4) td:nth-child(1) div{
+    height: 75%;
+    width: 42%;
+    left: 28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 5px;
+    background-color: darkgreen;
+    font-weight: bold;
+    color: #f7f7f7;
+}
+
+.table-div table tr:nth-child(17) td:nth-child(1) div{
+    height: 75%;
+    width: 42%;
+    left: 28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 5px;
+    background-color: darkred;
+    font-weight: bold;
+    color: #f7f7f7;
+}
+
+.table-div table tr:nth-child(18) td:nth-child(1) div{
+    height: 75%;
+    width: 42%;
+    left: 28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 5px;
+    background-color: darkred;
+    font-weight: bold;
+    color: #f7f7f7;
+}
+
+.table-div table tr:nth-child(19) td:nth-child(1) div{
+    height: 75%;
+    width: 42%;
+    left: 28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 5px;
+    background-color: darkred;
+    font-weight: bold;
+    color: #f7f7f7;
+}
+
+.legend{
+    position: relative;
+    width: 70%;
+    height: 12%;
+    left: 15%;
+    top: 4%;
+}
+
+.row{
+    height: 31%;
+    width: 100%;
+    left: 1%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.square1{
+    background-color: darkblue;
+    height: 70%;
+    width: 3.8%;
+    border-radius: 3px;
+    position: relative;
+    left: 2.5%;
+}
+
+.square2{
+    background-color: darkgreen;
+    height: 70%;
+    width: 3.8%;
+    border-radius: 3px;
+    position: relative;
+    left: 2.5%;
+}
+
+.square3{
+    background-color: darkred;
+    height: 70%;
+    width: 3.8%;
+    border-radius: 3px;
+    position: relative;
+    left: 2.5%;
+}
+
+.legend p{
+    position: relative;
+    left: 4%;
+    font-family: sans-serif;
+    color: black;
+    font-size: 13px;
+}
+
+.buttons{
+    height: 5%;
+    width:30%;
+    position: relative;
+    top: 4%;
+    left: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.buttons button{
+    width: 45%;
+    height: 70%;
+    padding: 3%;
+    color: #f7f7f7;
+    background-color: darkgray;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.buttons button.selected{
+    width: 45%;
+    height: 70%;
+    padding: 3%;
+    color: #f7f7f7;
+    background-color: #2f9e41;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.table-div{
+    position: relative;
+    top: 7%;
+    height: 80%;
+    display: block;
+}
+
+.scorers-div{
+    position:relative;
+    top: 7%;
+    height: 85%;
+    display: none;
+    overflow-y: scroll;
+}
+
+.scorers-div table{
+    width: 70%;
+    top: 1%;
+    left: 15%;
+    position: relative;
+    font-family: sans-serif;
+    font-size: 14px;
+    border-spacing: 0;
+}
+
+.scorers-div table th{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.scorers-div table th:nth-child(2){
+    text-align: left;
+}
+
+.scorers-div table td{
+    text-align: center;
+    border-bottom: 2px solid;
+    border-color: gray;
+}
+
+.scorers-div table td:nth-child(2){
+    text-align: left;
+}
+
+.scorers-div table td:nth-child(3) img{
+    position: relative;
+    padding: 0;
+    height: 25px;
+    width: 25px;
+}
+
+.scorers-div table td:nth-child(4) img{
+    position: relative;
+    padding: 0;
+    height: 20px;
+    width: 30px;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 7px;
+    opacity: 0;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: darkgray;
+    border-radius: 5px;
+}
+
+.clickable-row:hover{
+    cursor: pointer;
+}
+
+
