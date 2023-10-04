@@ -43,6 +43,18 @@ Current league table.
 
 Top scorers table.
 
+![screen11](https://github.com/krzysztofnoga1/fullstack-football-results-website/assets/103099396/6807df42-5341-44f4-b85f-493363c4649b)
+
+Page with team details, such as current position in the league, squad, results and upcoming matches.
+
+![screen12](https://github.com/krzysztofnoga1/fullstack-football-results-website/assets/103099396/f52333d5-7b7c-431b-a361-027fe174cf80)
+
+Team's recent results.
+
+![screen13](https://github.com/krzysztofnoga1/fullstack-football-results-website/assets/103099396/9a554207-627d-46f9-bf47-3b955c21fcc6)
+
+Team's upcoming matches.
+
 ![screen7](https://github.com/krzysztofnoga1/fullstack-football-results-website/assets/103099396/09cc8614-bedd-47c7-9ead-84f8d7488143)
 
 Profile page.
