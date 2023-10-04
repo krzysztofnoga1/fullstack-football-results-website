@@ -6,7 +6,7 @@
     $email=$_POST['email'];
 
     require_once "../connect.php";
-    require_once "../registration_validations.php";
+    require_once "../login-register/registration_validations.php";
 
     mysqli_report(MYSQLI_REPORT_STRICT);
     try{
